@@ -28,7 +28,7 @@ export default function BookRow({
 
   return (
     <div className="group grid shadow-sm grid-cols-12 items-center gap-4 rounded p-5 transition-all bg-white">
-      <div className={"col-span-2 w-full h-full" + bookStatusColor}>
+      <div className={"col-span-12 md:col-span-2 w-full h-full" + bookStatusColor}>
         <p
           className={`text-base text-white uppercase font-semibold ${bookStatusColor} px-4 py-2 rounded inline-block mt-2`}
         >
@@ -36,7 +36,7 @@ export default function BookRow({
         </p>
       </div>
 
-      <div className="flex-1 min-w-0 col-span-9">
+      <div className="flex-1 min-w-0 col-span-12 md:col-span-9">
         <h3 className=" text-gray-600 truncate text-sm">
         <span className="font-semibold text-2xl">{book.title}</span>
         </h3>
@@ -60,7 +60,7 @@ export default function BookRow({
         )}
       </div>
 
-      <div className="flex gap-4 col-span-1">
+      <div className="flex gap-4 col-span-12 md:col-span-1">
         <button
           onClick={() => onEdit(book)}
           className="text-sm text-(--primary) hover:cursor-pointer transition-colors font-medium"
