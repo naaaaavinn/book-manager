@@ -19,7 +19,7 @@ export default function Header() {
               href="/login"
               className="bg-(--primary) text-white rounded-full text-base px-3 py-1.5 hover:bg-[#0077ed] font-medium transition-colors"
             >
-              Sign in
+              Login
             </Link>
           </div>
         )}
@@ -30,7 +30,7 @@ export default function Header() {
               onClick={logout}
               className="text-sm bg-red-500 hover:bg-red-700 p-2 rounded text-white hover:cursor-pointer transition-colors"
             >
-              Sign out
+              Logout
             </button>
           </div>
         )}
